@@ -1,0 +1,190 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: white;
+  background-color: #fbb034;
+  transition: all 300ms ease-in-out;
+}
+
+.gradient {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 25rem;
+  background: linear-gradient(#ffdd00, #fbb034);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-fd-c {
+  flex-direction: column;
+}
+
+.flex-jc-fe {
+  justify-content: flex-end;
+}
+
+.place {
+  z-index: 1;
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .place {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.header {
+  margin-top: 2rem;
+  max-width: 411px;
+}
+
+.header .icon {
+  box-shadow: 0.625rem 0.625rem 0.625rem rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.title {
+  width: 100%;
+  line-height: 1.2rem;
+}
+
+.title h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.title p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #eeeded;
+}
+
+.title .description1 {
+  width: 100%;
+}
+
+.title .description {
+  max-width: 411px;
+}
+
+.title .icon {
+  gap: 0.3rem;
+}
+
+.title .icon img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.title .icon p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.heart {
+  margin-left: 0.2rem;
+  font-size: 50rem;
+  color: #eeeded;
+  transition: all 300ms ease-in-out;
+}
+
+.heart-red {
+  color: red;
+}
+
+.songs {
+  margin-top: 3rem;
+}
+
+.songs li {
+  border-bottom: 2px solid #eeeded;
+}
+
+.songs ul {
+  margin-left: -2.6rem;
+  list-style-type: none;
+}
+
+.songs p {
+  text-align: left;
+}
+
+.songs h3 {
+  margin-bottom: -0.5rem;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.songs h3:hover {
+  color: gray;
+}
+
+.songs .audio {
+  display: none;
+  width: 100%;
+  transition: all 300ms ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.songs .audiosee {
+  display: block;
+  width: 100%;
+  transition: all 300ms ease-in-out;
+}
+
+@keyframes transition-in {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@keyframes transition-out {
+  from {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+}
+
+div, section, audio {
+  animation: transition-in 2s;
+}
+/*# sourceMappingURL=styles.css.map */
